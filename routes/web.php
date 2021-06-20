@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BlogController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +16,8 @@ use App\Http\Controllers\AboutController;
 |
 */
 
-Route::get('/', function () {
-    return view('app');
-});
+Route::get('/', [AboutController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index'])
     ->name('about');
+ Route::get('/blog', [BlogController::class, 'index'])
+    ->name('blog');

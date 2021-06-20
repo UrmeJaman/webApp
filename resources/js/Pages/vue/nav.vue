@@ -25,10 +25,10 @@
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
+                        <a href="/about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="/blog" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="cases.html" class="nav-link">Case Study</a>

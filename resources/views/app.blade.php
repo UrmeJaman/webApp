@@ -21,16 +21,17 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://unpkg.com/vue@next"></script>
 
-	
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=smoothscroll,NodeList.prototype.forEach,Promise,Object.values,Object.assign" defer></script>
+	<script src ="{{mix('/js/app.js')}}" defer></script>
+	@routes()
 </head>
     <body class="antialiased">
-       <div id="app">
-           <app>
-           </app>
-           
-       </div>
+       
+          
+           @inertia
+       
 	 
-       <script src ="{{mix('/js/app.js')}}"></script>
+       
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -43,9 +44,8 @@
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/jquery.animateNumber.min.js"></script>
 		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
-		<script src="js/main.js"></script>
+		{{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<script src="js/google-map.js"></script> --}}
 		
     </body>
 </html>

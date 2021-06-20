@@ -2,11 +2,11 @@
     <div>
         <Head />
         <Nav />
-        <head-content />
-        <head-info />
-        <history />
+        <HeadContent />
+        <HeadInfo />
+        <History />
         <Consult />
-        <service />
+        <Service />
         <Work />
         <Question />
         <Testimoni />
@@ -52,6 +52,8 @@ import Testimoni from "./testimoni.vue";
 import Blog from "./blog.vue";
 import Appointment from "./appointment.vue";
 import Footer from "./footer.vue";
+import { TemplateMain } from "./../../lib/TemplateMain";
+
 export default {
     components: {
         Head,
@@ -67,6 +69,11 @@ export default {
         Blog,
         Appointment,
         Footer
+    },
+    mounted() {
+        this.$nextTick(function() {
+            TemplateMain();
+        });
     }
 };
 </script>
