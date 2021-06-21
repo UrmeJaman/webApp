@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\CaseStudyController;
+use App\Http\Controllers\ContactController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +20,14 @@ use App\Http\Controllers\AboutController;
 |
 */
 
-Route::get('/', function () {
-    return view('app');
-});
+Route::get('/', [Controller::class, 'index']);
 Route::get('/about', [AboutController::class, 'index'])
     ->name('about');
+ Route::get('/blog', [BlogController::class, 'index'])
+    ->name('blog');
+ Route::get('/caseStudy', [CaseStudyController::class, 'index'])
+    ->name('case');
+Route::get('/contact', [ContactController::class, 'index'])
+    ->name('contact');
+Route::get('/service', [ServiceController::class, 'index'])
+    ->name('service');

@@ -5,8 +5,13 @@
     >
         <div class="container">
             <a class="navbar-brand" href="index.html"
-                >IT<span>solution</span></a
-            >
+                ><img
+                    src="images/neu.png"
+                    style="width:30%;"
+                    alt="Girl in a jacket"
+                />
+            </a>
+
             <button
                 class="navbar-toggler"
                 type="button"
@@ -22,25 +27,25 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="/" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
+                        <a href="/about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="/service" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="cases.html" class="nav-link">Case Study</a>
+                        <a href="/caseStudy" class="nav-link">Case Study</a>
                     </li>
                     <li class="nav-item">
-                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="/blog" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact us</a>
+                        <a href="/contact" class="nav-link">Contact us</a>
                     </li>
                     <li class="nav-item cta">
-                        <a href="#" class="nav-link"> Get Quete</a>
+                        <a href="/quete" class="nav-link"> Get Quete</a>
                     </li>
                 </ul>
             </div>
