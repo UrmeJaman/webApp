@@ -88,7 +88,13 @@ var staticRenderFns = [
         _c("div", { staticClass: "container" }, [
           _c(
             "a",
-            { staticClass: "navbar-brand", attrs: { href: "index.html" } },
+            {
+              staticClass: "navbar-brand",
+              staticStyle: {
+                "background-image": "url('images/logo-dark-md.png')"
+              },
+              attrs: { href: "index.html" }
+            },
             [_vm._v("IT"), _c("span", [_vm._v("solution")])]
           ),
           _vm._v(" "),
@@ -120,11 +126,9 @@ var staticRenderFns = [
             [
               _c("ul", { staticClass: "navbar-nav ml-auto" }, [
                 _c("li", { staticClass: "nav-item active" }, [
-                  _c(
-                    "a",
-                    { staticClass: "nav-link", attrs: { href: "index.html" } },
-                    [_vm._v("Home")]
-                  )
+                  _c("a", { staticClass: "nav-link", attrs: { href: "/" } }, [
+                    _vm._v("Home")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "nav-item" }, [
@@ -138,7 +142,7 @@ var staticRenderFns = [
                 _c("li", { staticClass: "nav-item" }, [
                   _c(
                     "a",
-                    { staticClass: "nav-link", attrs: { href: "/blog" } },
+                    { staticClass: "nav-link", attrs: { href: "/service" } },
                     [_vm._v("Services")]
                   )
                 ]),
@@ -146,7 +150,7 @@ var staticRenderFns = [
                 _c("li", { staticClass: "nav-item" }, [
                   _c(
                     "a",
-                    { staticClass: "nav-link", attrs: { href: "cases.html" } },
+                    { staticClass: "nav-link", attrs: { href: "/caseStudy" } },
                     [_vm._v("Case Study")]
                   )
                 ]),
@@ -154,7 +158,7 @@ var staticRenderFns = [
                 _c("li", { staticClass: "nav-item" }, [
                   _c(
                     "a",
-                    { staticClass: "nav-link", attrs: { href: "blog.html" } },
+                    { staticClass: "nav-link", attrs: { href: "/blog" } },
                     [_vm._v("Blog")]
                   )
                 ]),
@@ -162,18 +166,17 @@ var staticRenderFns = [
                 _c("li", { staticClass: "nav-item" }, [
                   _c(
                     "a",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { href: "contact.html" }
-                    },
+                    { staticClass: "nav-link", attrs: { href: "/contact" } },
                     [_vm._v("Contact us")]
                   )
                 ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "nav-item cta" }, [
-                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                    _vm._v(" Get Quete")
-                  ])
+                  _c(
+                    "a",
+                    { staticClass: "nav-link", attrs: { href: "/quete" } },
+                    [_vm._v(" Get Quete")]
+                  )
                 ])
               ])
             ]

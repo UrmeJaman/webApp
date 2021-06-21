@@ -16594,6 +16594,14 @@ var map = {
 		"./resources/js/Pages/vue/history.vue",
 		"resources_js_Pages_vue_history_vue"
 	],
+	"./vue/loader": [
+		"./resources/js/Pages/vue/loader.vue",
+		"resources_js_Pages_vue_loader_vue"
+	],
+	"./vue/loader.vue": [
+		"./resources/js/Pages/vue/loader.vue",
+		"resources_js_Pages_vue_loader_vue"
+	],
 	"./vue/nav": [
 		"./resources/js/Pages/vue/nav.vue",
 		"resources_js_Pages_vue_nav_vue"
@@ -16601,6 +16609,14 @@ var map = {
 	"./vue/nav.vue": [
 		"./resources/js/Pages/vue/nav.vue",
 		"resources_js_Pages_vue_nav_vue"
+	],
+	"./vue/pageCiecle": [
+		"./resources/js/Pages/vue/pageCiecle.vue",
+		"resources_js_Pages_vue_pageCiecle_vue"
+	],
+	"./vue/pageCiecle.vue": [
+		"./resources/js/Pages/vue/pageCiecle.vue",
+		"resources_js_Pages_vue_pageCiecle_vue"
 	],
 	"./vue/question": [
 		"./resources/js/Pages/vue/question.vue",
@@ -16759,7 +16775,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_About_vue":"23685c6d82f68db30b34","resources_js_Pages_Blog_vue":"0d456d24283df59bee82","resources_js_Pages_CaseStudy_vue":"61fd939a99388aebc4df","resources_js_Pages_Contact_vue":"3c8574f66274fcc24864","resources_js_Pages_Service_vue":"84ce691537857456c0b6","resources_js_Pages_vue_app_vue":"9f46297f8032cc5a016f","resources_js_Pages_vue_appointment_vue":"12aef023373a714fb3c8","resources_js_Pages_vue_blog_vue":"14195f32a022ccc9884c","resources_js_Pages_vue_consult_vue":"788719b302052d0d3364","resources_js_Pages_vue_footer_vue":"ef4890f9f839d02cbe99","resources_js_Pages_vue_head_vue":"0822ce1fb8480ec6b10b","resources_js_Pages_vue_headContent_vue":"8821f9c66b725fedeb98","resources_js_Pages_vue_headInfo_vue":"a6b6a25b6898f8c446d7","resources_js_Pages_vue_history_vue":"ee908026058e141356b3","resources_js_Pages_vue_nav_vue":"df94657eb604a267b304","resources_js_Pages_vue_question_vue":"1b1f7149b706e6ac6fb3","resources_js_Pages_vue_service_vue":"6b096dd86e5a747edd0d","resources_js_Pages_vue_testimoni_vue":"737ee737809f18879a05","resources_js_Pages_vue_work_vue":"31e54eb82ff24bb6de44"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_About_vue":"1587ce7936ad22554030","resources_js_Pages_Blog_vue":"7a7ddf10528a7221c1a7","resources_js_Pages_CaseStudy_vue":"9352b8dd465b57fb24e2","resources_js_Pages_Contact_vue":"88cee17a1d780166e504","resources_js_Pages_Service_vue":"773a18684cb3fd07f632","resources_js_Pages_vue_app_vue":"e89d9e4779354fb3cb94","resources_js_Pages_vue_appointment_vue":"12aef023373a714fb3c8","resources_js_Pages_vue_blog_vue":"14195f32a022ccc9884c","resources_js_Pages_vue_consult_vue":"788719b302052d0d3364","resources_js_Pages_vue_footer_vue":"ef4890f9f839d02cbe99","resources_js_Pages_vue_head_vue":"0822ce1fb8480ec6b10b","resources_js_Pages_vue_headContent_vue":"8821f9c66b725fedeb98","resources_js_Pages_vue_headInfo_vue":"a6b6a25b6898f8c446d7","resources_js_Pages_vue_history_vue":"ee908026058e141356b3","resources_js_Pages_vue_loader_vue":"f0225a33c6292d6cd571","resources_js_Pages_vue_nav_vue":"26f89e6d6a9374182ad5","resources_js_Pages_vue_pageCiecle_vue":"fe43bd36ece2dba51746","resources_js_Pages_vue_question_vue":"1b1f7149b706e6ac6fb3","resources_js_Pages_vue_service_vue":"6b096dd86e5a747edd0d","resources_js_Pages_vue_testimoni_vue":"737ee737809f18879a05","resources_js_Pages_vue_work_vue":"31e54eb82ff24bb6de44"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
