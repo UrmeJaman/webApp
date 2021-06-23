@@ -4,12 +4,13 @@
             <div class="row justify-content-center pb-5">
                 <div class="col-lg-6 heading-section text-center ftco-animate">
                     <h2 class="mb-4">
-                        More than <span>35+</span> years we provide
+                        {{ about.head_intro }}
+                        <span> {{ about.head_years }}</span>
+                        {{ about.head_main }}
                         <span>IT Solution</span>
                     </h2>
                     <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia
+                        {{ about.head_details }}
                     </p>
                 </div>
             </div>
@@ -20,10 +21,9 @@
                             <span class="flaticon-web-programming"></span>
                         </div>
                         <div class="text">
-                            <h3>Web Development</h3>
+                            <h3>{{ about.body_title }}</h3>
                             <p>
-                                Far far away, behind the word mountains, far
-                                from the countries Vokalia and Consonantia
+                                {{ about.body_details }}
                             </p>
                         </div>
                     </div>
@@ -37,10 +37,9 @@
                             <span class="flaticon-secure"></span>
                         </div>
                         <div class="text">
-                            <h3>Server Security</h3>
+                            <h3>{{ about.body_title_2 }}</h3>
                             <p>
-                                Far far away, behind the word mountains, far
-                                from the countries Vokalia and Consonantia
+                                {{ about.body_details_2 }}
                             </p>
                         </div>
                     </div>
@@ -49,3 +48,11 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    components: {},
+    props: {
+        about: Array
+    }
+};
+</script>

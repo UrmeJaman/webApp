@@ -1,5 +1,75 @@
 (self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_vue_history_vue"],{
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/vue/history.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/vue/history.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {},
+  props: {
+    about: Array
+  }
+});
+
+/***/ }),
+
 /***/ "./resources/js/Pages/vue/history.vue":
 /*!********************************************!*\
   !*** ./resources/js/Pages/vue/history.vue ***!
@@ -12,15 +82,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _history_vue_vue_type_template_id_7886aedc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./history.vue?vue&type=template&id=7886aedc& */ "./resources/js/Pages/vue/history.vue?vue&type=template&id=7886aedc&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _history_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./history.vue?vue&type=script&lang=js& */ "./resources/js/Pages/vue/history.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 ;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__.default)(
-  script,
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _history_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
   _history_vue_vue_type_template_id_7886aedc___WEBPACK_IMPORTED_MODULE_0__.render,
   _history_vue_vue_type_template_id_7886aedc___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
@@ -34,6 +106,22 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 if (false) { var api; }
 component.options.__file = "resources/js/Pages/vue/history.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/vue/history.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/Pages/vue/history.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_history_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./history.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/vue/history.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_history_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -70,83 +158,107 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "ftco-section" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row justify-content-center pb-5" }, [
+        _c(
+          "div",
+          { staticClass: "col-lg-6 heading-section text-center ftco-animate" },
+          [
+            _c("h2", { staticClass: "mb-4" }, [
+              _vm._v(
+                "\n                    " +
+                  _vm._s(_vm.about.head_intro) +
+                  "\n                    "
+              ),
+              _c("span", [_vm._v(" " + _vm._s(_vm.about.head_years))]),
+              _vm._v(
+                "\n                    " +
+                  _vm._s(_vm.about.head_main) +
+                  "\n                    "
+              ),
+              _c("span", [_vm._v("IT Solution")])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                    " +
+                  _vm._s(_vm.about.head_details) +
+                  "\n                "
+              )
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "services-2 text-center" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "text" }, [
+              _c("h3", [_vm._v(_vm._s(_vm.about.body_title))]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                            " +
+                    _vm._s(_vm.about.body_details) +
+                    "\n                        "
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("div", { staticClass: "services-2 text-center" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("div", { staticClass: "text" }, [
+              _c("h3", [_vm._v(_vm._s(_vm.about.body_title_2))]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                            " +
+                    _vm._s(_vm.about.body_details_2) +
+                    "\n                        "
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ftco-section" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row justify-content-center pb-5" }, [
-          _c(
-            "div",
-            {
-              staticClass: "col-lg-6 heading-section text-center ftco-animate"
-            },
-            [
-              _c("h2", { staticClass: "mb-4" }, [
-                _vm._v("\n                    More than "),
-                _c("span", [_vm._v("35+")]),
-                _vm._v(" years we provide\n                    "),
-                _c("span", [_vm._v("IT Solution")])
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                    Far far away, behind the word mountains, far from the\n                    countries Vokalia and Consonantia\n                "
-                )
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("div", { staticClass: "services-2 text-center" }, [
-              _c("div", { staticClass: "icon" }, [
-                _c("span", { staticClass: "flaticon-web-programming" })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "text" }, [
-                _c("h3", [_vm._v("Web Development")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            Far far away, behind the word mountains, far\n                            from the countries Vokalia and Consonantia\n                        "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("img", {
-              staticClass: "img-fluid",
-              attrs: { src: "images/services.svg", alt: "" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-4" }, [
-            _c("div", { staticClass: "services-2 text-center" }, [
-              _c("div", { staticClass: "icon" }, [
-                _c("span", { staticClass: "flaticon-secure" })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "text" }, [
-                _c("h3", [_vm._v("Server Security")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                            Far far away, behind the word mountains, far\n                            from the countries Vokalia and Consonantia\n                        "
-                  )
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
+    return _c("div", { staticClass: "icon" }, [
+      _c("span", { staticClass: "flaticon-web-programming" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("img", {
+        staticClass: "img-fluid",
+        attrs: { src: "images/services.svg", alt: "" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "icon" }, [
+      _c("span", { staticClass: "flaticon-secure" })
     ])
   }
 ]

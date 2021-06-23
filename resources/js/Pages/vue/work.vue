@@ -3,7 +3,10 @@
         <div class="container">
             <div class="row justify-content-center pb-5">
                 <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">Our Strategic <span>Work</span></h2>
+                    <h2 class="mb-4">
+                        {{ casestudy.head_intro }}Our Strategic
+                        <span>Work</span>
+                    </h2>
                 </div>
             </div>
             <div class="row">
@@ -16,14 +19,21 @@
                                 alt="Colorlib Template"
                             />
                         </div>
-                        <div class="text text-center">
-                            <span>Web Development</span>
-                            <h3>
-                                <a href="project.html"
-                                    >Best Solution for Information Technology</a
+                        <tr>
+                            <div class="text text-center">
+                                <span
+                                    >Web Development{{
+                                        casestudy.body_title
+                                    }}</span
                                 >
-                            </h3>
-                        </div>
+                                <h3>
+                                    <a href="project.html"
+                                        >Best Solution for Information
+                                        Technology</a
+                                    >
+                                </h3>
+                            </div>
+                        </tr>
                         <a
                             href="images/work-1.jpg"
                             class="icon image-popup d-flex justify-content-center align-items-center"
@@ -112,3 +122,11 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    components: {},
+    props: {
+        casestudy: Array
+    }
+};
+</script>

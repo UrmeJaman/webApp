@@ -44,6 +44,9 @@
                     <li class="nav-item">
                         <a href="/contact" class="nav-link">Contact us</a>
                     </li>
+                    <li class="nav-item ">
+                        <a href="login" class="nav-link">Login</a>
+                    </li>
                     <li class="nav-item cta">
                         <a href="/quete" class="nav-link"> Get Quete</a>
                     </li>

@@ -4,7 +4,7 @@
         <Nav />
         <HeadContent />
         <HeadInfo />
-        <History />
+        <History v-bind:about="about" />
         <Consult />
         <Service />
         <Work />
@@ -69,6 +69,9 @@ export default {
         Blog,
         Appointment,
         Footer
+    },
+    props: {
+        about: Array
     },
     mounted() {
         this.$nextTick(function() {

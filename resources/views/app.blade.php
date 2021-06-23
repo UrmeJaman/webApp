@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
     
 <head>
-	<title>ITSolution - Free Bootstrap 4 Template by Colorlib</title>
+	<title>	Neucave Ltd.</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
@@ -44,8 +44,8 @@
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/jquery.animateNumber.min.js"></script>
 		<script src="js/scrollax.min.js"></script>
-		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script> --}}
+		 {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<script src="js/google-map.js"></script>  --}}
 		
     </body>
 </html>

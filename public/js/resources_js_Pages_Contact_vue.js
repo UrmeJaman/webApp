@@ -1584,14 +1584,13 @@ var staticRenderFns = [
         _c("div", { staticClass: "container" }, [
           _c(
             "a",
-            {
-              staticClass: "navbar-brand",
-              staticStyle: {
-                "background-image": "url('images/logo-dark-md.png')"
-              },
-              attrs: { href: "index.html" }
-            },
-            [_vm._v("IT"), _c("span", [_vm._v("solution")])]
+            { staticClass: "navbar-brand", attrs: { href: "index.html" } },
+            [
+              _c("img", {
+                staticStyle: { width: "30%" },
+                attrs: { src: "images/neu.png", alt: "Girl in a jacket" }
+              })
+            ]
           ),
           _vm._v(" "),
           _c(
@@ -1664,6 +1663,14 @@ var staticRenderFns = [
                     "a",
                     { staticClass: "nav-link", attrs: { href: "/contact" } },
                     [_vm._v("Contact us")]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "nav-item " }, [
+                  _c(
+                    "a",
+                    { staticClass: "nav-link", attrs: { href: "login" } },
+                    [_vm._v("Login")]
                   )
                 ]),
                 _vm._v(" "),

@@ -16,33 +16,43 @@
                 >
                     <div class="col-md-9 ftco-animate pb-5 text-center">
                         <h1 class="mb-3 bread">Read our blog</h1>
+
                         <p class="breadcrumbs">
                             <span class="mr-2"
                                 ><a href="index.html"
                                     >Home <i class="fa fa-chevron-right"></i></a
                             ></span>
-                            <span
+                            <inertia-link :href="route('blog.create')">
+                                <span>ADD BLOG </span></inertia-link
+                            >
+                            <!-- <span
                                 >Blog <i class="fa fa-chevron-right"></i
-                            ></span>
+                            ></span> -->
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
         <Blog />
+        <!-- <tr v-for="blog in blogs" :key="blog.id">
+            {{
+                blog.title
+            }}
+        </tr> -->
         <Page />
         <Footer />
     </div>
 </template>
 <script>
-import Head from "./vue/head.vue";
-import Loader from "./vue/loader.vue";
-import Nav from "./vue/nav.vue";
-import Blog from "./vue/blog.vue";
-import Page from "./vue/pageCiecle.vue";
-import Footer from "./vue/footer.vue";
+import Head from "../vue/head.vue";
+import Loader from "../vue/loader.vue";
+import Nav from "../vue/nav.vue";
+import Blog from "../vue/blog.vue";
+import Page from "../vue/pageCiecle.vue";
+import Footer from "../vue/footer.vue";
 
-import { TemplateMain } from "./../lib/TemplateMain";
+import { TemplateMain } from "../../lib/TemplateMain";
 export default {
     components: {
         Head,
@@ -51,6 +61,12 @@ export default {
         Blog,
         Page,
         Footer
+    },
+    props: {
+        blogs: Array
+    },
+    data() {
+        return {};
     },
     mounted() {
         this.$nextTick(function() {
