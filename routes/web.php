@@ -62,6 +62,8 @@ Route::get('/about/create', [ABoutController::class, 'create'])
     ->name('about.create');
     Route::post('/about', [AboutController::class, 'store'])
     ->name('about.store');
+Route::get('/about/download/{file}', [AboutController::class, 'downloadFile'])->where('file', '(.*)')
+    ->name('about.downloadFile');
 // Route::get('/about/data',[AboutController::class, 'showAbout']);
     
 //casestudy
@@ -71,3 +73,5 @@ Route::get('/casestudy/create', [CaseStudyController::class, 'create'])
     ->name('casestudy.create');
     Route::post('/casestudy', [CaseStudyController::class, 'store'])
     ->name('casestudy.store');
+Route::get('/showImage', [AboutController::class, 'showImage'])
+    ->name('showimage');

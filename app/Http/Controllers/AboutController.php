@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 use App\Models\Page;
 use App\FileUpload;
+use Illuminate\Support\Facades\Storage;
 
 
 
@@ -24,7 +25,7 @@ class AboutController extends Controller
                'head_years'=>$about->head_years,
                'head_main'=>  $about->head_main,
                'head_details'=>$about->head_details,
-               'product'=> $about->image,
+               'image'=> $about->image,
                'body_title'=>$about->body_title,
                'body_icon'=>$about->body_icon,
                'body_details'=>$about->body_details,
@@ -48,7 +49,7 @@ class AboutController extends Controller
             
     }
     public function store(Request $request)    {
-
+        // $pathToFile= $request->file('image')->store('images','public');
 
       
         $about=new Page;
@@ -57,13 +58,13 @@ class AboutController extends Controller
         $about->head_years=$request->input('head_years');
         $about->head_main=$request->input('head_main');
         $about->head_details=$request->input('head_details');
-        $about->image= $request->input('image');
+        $about->image= $request->file('image')? $request->file('image')->store('uploads','public'):null;
         $about->body_title=$request->input('body_title');
         $about->body_icon=$request->input('body_icon');
         $about->body_details=$request->input('body_details');
-        $about->body_title_2=$request->input('body_title2');
-        $about->body_icon_2=$request->input('body_icon2');
-        $about->body_details_2=$request->input('body_details2');
+        $about->body_title_2=$request->input('body_title_2');
+        $about->body_icon_2=$request->input('body_icon_2');
+        $about->body_details_2=$request->input('body_details_2');
         $about->save();
 
 
@@ -73,5 +74,12 @@ class AboutController extends Controller
             
     }
 
+    
+    public function downloadFile($file)    {
+        $destination = storage_path('/app/public/');
+        $pathToFile = $destination.$file;
+        return response()->download($pathToFile);
+        //return Storage::get("/".$pathToFile);  
+    }
        
 }

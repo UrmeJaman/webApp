@@ -27,7 +27,7 @@ class Controller extends BaseController
                'head_years'=>$about->head_years,
                'head_main'=>  $about->head_main,
                'head_details'=>$about->head_details,
-               'product'=> $about->image,
+               'image'=> $about->image,
                'body_title'=>$about->body_title,
                'body_icon'=>$about->body_icon,
                'body_details'=>$about->body_details,

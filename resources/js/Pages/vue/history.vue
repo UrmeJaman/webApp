@@ -18,7 +18,8 @@
                 <div class="col-md-4">
                     <div class="services-2 text-center">
                         <div class="icon">
-                            <span class="flaticon-web-programming"></span>
+                            <!-- <span class="flaticon-web-programming"></span> -->
+                            <span v-bind:class="about.body_icon"></span>
                         </div>
                         <div class="text">
                             <h3>{{ about.body_title }}</h3>
@@ -29,12 +30,18 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/services.svg" class="img-fluid" alt="" />
+                    <img
+                        v-bind:src="'/about/download/' + about.image"
+                        class="img-fluid"
+                        alt=""
+                    />
+                    <!-- <img src="images/services.svg" class="img-fluid" alt="" /> -->
                 </div>
                 <div class="col-md-4">
                     <div class="services-2 text-center">
                         <div class="icon">
-                            <span class="flaticon-secure"></span>
+                            <!-- <span class="flaticon-secure"></span> -->
+                            <span v-bind:class="about.body_icon_2"></span>
                         </div>
                         <div class="text">
                             <h3>{{ about.body_title_2 }}</h3>

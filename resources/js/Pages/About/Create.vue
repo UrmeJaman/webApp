@@ -24,7 +24,7 @@
 
             <label for="image">Image:</label><br />
             <input
-                v-on:change="image"
+                @change="handleonchange"
                 type="file"
                 id="image"
                 name="image"
@@ -44,23 +44,23 @@
                 v-model="form.body_details"
             /><br />
 
-            <label for="body_title2">Another_Body_Title:</label><br />
+            <label for="body_title_2">Another_Body_Title:</label><br />
             <input
                 type="text"
-                id="body_title2"
-                v-model="form.body_title2"
+                id="body_title_2"
+                v-model="form.body_title_2"
             /><br />
-            <label for="body_icon2">Anoter_body_icon:</label><br />
+            <label for="body_icon_2">Anoter_body_icon:</label><br />
             <input
                 type="text"
-                id="body_icon2"
-                v-model="form.body_icon2"
+                id="body_icon_2"
+                v-model="form.body_icon_2"
             /><br />
-            <label for="body_details2">Anotehr_Body_details:</label><br />
+            <label for="body_details_2">Anotehr_Body_details:</label><br />
             <input
                 type="text"
                 id="body-details2"
-                v-model="form.body_details2"
+                v-model="form.body_details_2"
             /><br />
             <button :loading="sending" class="btn-indigo" type="submit">
                 add
@@ -78,7 +78,6 @@ export default {
                 head_years: null,
                 head_main: null,
                 head_details: null,
-                image: null,
 
                 body_title: null,
                 body_icon: null,
@@ -86,18 +85,62 @@ export default {
                 body_title_2: null,
                 body_icon_2: null,
                 body_details_2: null,
-
+                image: " ",
                 created_at: new Date().toISOString().slice(0, 10)
             }
         };
     },
     methods: {
         submit() {
-            console.log(this.form);
-            this.$inertia.post(this.route("about.store"), this.form, {
-                onStart: () => (this.sending = true),
-                onFinish: () => (this.sending = false)
-            });
+            let data = new FormData();
+            data.append(
+                "head_intro",
+                this.form.head_intro ? this.form.head_intro : ""
+            );
+            data.append(
+                "head_years",
+                this.form.head_years ? this.form.head_years : ""
+            );
+            data.append(
+                "head_main",
+                this.form.head_main ? this.form.head_main : ""
+            );
+            data.append(
+                "head_details",
+                this.form.head_details ? this.form.head_details : ""
+            );
+
+            data.append(
+                "body_title",
+                this.form.body_title ? this.form.body_title : ""
+            );
+            data.append(
+                "body_icon",
+                this.form.body_icon ? this.form.body_icon : ""
+            );
+            data.append(
+                "body_details",
+                this.form.body_details ? this.form.body_details : ""
+            );
+            data.append(
+                "body_title_2",
+                this.form.body_title_2 ? this.form.body_title_2 : ""
+            );
+            data.append(
+                "body_icon_2",
+                this.form.body_icon_2 ? this.form.body_icon_2 : ""
+            );
+            data.append(
+                "body_details_2",
+                this.form.body_details_2 ? this.form.body_details_2 : ""
+            );
+            data.append("image", this.form.image ? this.form.image : "");
+
+            console.log(this.data);
+            this.$inertia.post(this.route("about.store"), data);
+        },
+        handleonchange(e) {
+            this.form.image = e.target.files[0];
         }
     }
 };

@@ -12,7 +12,7 @@ class CaseStudyController extends Controller
 
 
 
-        $data=Page::where('page_id',3)->latest( 'created_at')->take(1)->get()
+        $data=Page::where('page_id',4)->latest( 'created_at')->take(1)->get() //pageid=4 for case study
         ->transform(function ($casestudy){
             return [
                 'id'=> $casestudy->id,
@@ -25,10 +25,6 @@ class CaseStudyController extends Controller
                
             ]; });
 
-            
-
-            
-        
         return Inertia::render('CaseStudy/Index',[
             'casestudy'=>$data[0],
         ]);
@@ -41,7 +37,7 @@ class CaseStudyController extends Controller
       
     public function store(Request $request)    {
             $casestudy=new Page;
-            $casestudy->page_id=3;  //page_id=3 for casestudy
+            $casestudy->page_id=4;  //page_id=4 for casestudy
             $case->head_intro=$request->input('head_intro');
             
             $casestudy->image= $request->input('image');

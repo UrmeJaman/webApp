@@ -61,6 +61,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
   props: {
@@ -194,7 +201,9 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-4" }, [
           _c("div", { staticClass: "services-2 text-center" }, [
-            _vm._m(0),
+            _c("div", { staticClass: "icon" }, [
+              _c("span", { class: _vm.about.body_icon })
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "text" }, [
               _c("h3", [_vm._v(_vm._s(_vm.about.body_title))]),
@@ -210,11 +219,18 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm._m(1),
+        _c("div", { staticClass: "col-md-4" }, [
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: { src: "/about/download/" + _vm.about.image, alt: "" }
+          })
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-4" }, [
           _c("div", { staticClass: "services-2 text-center" }, [
-            _vm._m(2),
+            _c("div", { staticClass: "icon" }, [
+              _c("span", { class: _vm.about.body_icon_2 })
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "text" }, [
               _c("h3", [_vm._v(_vm._s(_vm.about.body_title_2))]),
@@ -233,35 +249,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "icon" }, [
-      _c("span", { staticClass: "flaticon-web-programming" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-4" }, [
-      _c("img", {
-        staticClass: "img-fluid",
-        attrs: { src: "images/services.svg", alt: "" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "icon" }, [
-      _c("span", { staticClass: "flaticon-secure" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

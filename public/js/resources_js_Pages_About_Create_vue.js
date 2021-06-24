@@ -90,30 +90,36 @@ __webpack_require__.r(__webpack_exports__);
         head_years: null,
         head_main: null,
         head_details: null,
-        image: null,
         body_title: null,
         body_icon: null,
         body_details: null,
         body_title_2: null,
         body_icon_2: null,
         body_details_2: null,
+        image: " ",
         created_at: new Date().toISOString().slice(0, 10)
       }
     };
   },
   methods: {
     submit: function submit() {
-      var _this = this;
-
-      console.log(this.form);
-      this.$inertia.post(this.route("about.store"), this.form, {
-        onStart: function onStart() {
-          return _this.sending = true;
-        },
-        onFinish: function onFinish() {
-          return _this.sending = false;
-        }
-      });
+      var data = new FormData();
+      data.append("head_intro", this.form.head_intro ? this.form.head_intro : "");
+      data.append("head_years", this.form.head_years ? this.form.head_years : "");
+      data.append("head_main", this.form.head_main ? this.form.head_main : "");
+      data.append("head_details", this.form.head_details ? this.form.head_details : "");
+      data.append("body_title", this.form.body_title ? this.form.body_title : "");
+      data.append("body_icon", this.form.body_icon ? this.form.body_icon : "");
+      data.append("body_details", this.form.body_details ? this.form.body_details : "");
+      data.append("body_title_2", this.form.body_title_2 ? this.form.body_title_2 : "");
+      data.append("body_icon_2", this.form.body_icon_2 ? this.form.body_icon_2 : "");
+      data.append("body_details_2", this.form.body_details_2 ? this.form.body_details_2 : "");
+      data.append("image", this.form.image ? this.form.image : "");
+      console.log(this.data);
+      this.$inertia.post(this.route("about.store"), data);
+    },
+    handleonchange: function handleonchange(e) {
+      this.form.image = e.target.files[0];
     }
   }
 });
@@ -328,7 +334,7 @@ var render = function() {
         _vm._v(" "),
         _c("input", {
           attrs: { type: "file", id: "image", name: "image" },
-          on: { change: _vm.image }
+          on: { change: _vm.handleonchange }
         }),
         _c("br"),
         _c("br"),
@@ -410,7 +416,7 @@ var render = function() {
         }),
         _c("br"),
         _vm._v(" "),
-        _c("label", { attrs: { for: "body_title2" } }, [
+        _c("label", { attrs: { for: "body_title_2" } }, [
           _vm._v("Another_Body_Title:")
         ]),
         _c("br"),
@@ -420,24 +426,24 @@ var render = function() {
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.form.body_title2,
-              expression: "form.body_title2"
+              value: _vm.form.body_title_2,
+              expression: "form.body_title_2"
             }
           ],
-          attrs: { type: "text", id: "body_title2" },
-          domProps: { value: _vm.form.body_title2 },
+          attrs: { type: "text", id: "body_title_2" },
+          domProps: { value: _vm.form.body_title_2 },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.$set(_vm.form, "body_title2", $event.target.value)
+              _vm.$set(_vm.form, "body_title_2", $event.target.value)
             }
           }
         }),
         _c("br"),
         _vm._v(" "),
-        _c("label", { attrs: { for: "body_icon2" } }, [
+        _c("label", { attrs: { for: "body_icon_2" } }, [
           _vm._v("Anoter_body_icon:")
         ]),
         _c("br"),
@@ -447,24 +453,24 @@ var render = function() {
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.form.body_icon2,
-              expression: "form.body_icon2"
+              value: _vm.form.body_icon_2,
+              expression: "form.body_icon_2"
             }
           ],
-          attrs: { type: "text", id: "body_icon2" },
-          domProps: { value: _vm.form.body_icon2 },
+          attrs: { type: "text", id: "body_icon_2" },
+          domProps: { value: _vm.form.body_icon_2 },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.$set(_vm.form, "body_icon2", $event.target.value)
+              _vm.$set(_vm.form, "body_icon_2", $event.target.value)
             }
           }
         }),
         _c("br"),
         _vm._v(" "),
-        _c("label", { attrs: { for: "body_details2" } }, [
+        _c("label", { attrs: { for: "body_details_2" } }, [
           _vm._v("Anotehr_Body_details:")
         ]),
         _c("br"),
@@ -474,18 +480,18 @@ var render = function() {
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.form.body_details2,
-              expression: "form.body_details2"
+              value: _vm.form.body_details_2,
+              expression: "form.body_details_2"
             }
           ],
           attrs: { type: "text", id: "body-details2" },
-          domProps: { value: _vm.form.body_details2 },
+          domProps: { value: _vm.form.body_details_2 },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.$set(_vm.form, "body_details2", $event.target.value)
+              _vm.$set(_vm.form, "body_details_2", $event.target.value)
             }
           }
         }),
